@@ -1,0 +1,147 @@
+.header{
+    width: 1240px;
+    height: 40px;
+    background-color: #d15364;
+
+    border-radius: 10px;
+    position: relative;
+
+    top: 20px;
+    left: 50%; /*가운데 정렬*/
+    transform: translate(-50%);
+    display: flex; /*자식 요소 세로 가운데 정렬*/
+    align-items: center;
+    z-index: 10; /*요소가 겹쳤을 때 위에 보이기*/
+}
+
+.someday_title{
+    font-size: 32px;
+    font-family: 'Abril Fatface';
+    color: #ffffff;
+    margin-left: 8px;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.title_text:hover{
+    font-weight: 600;
+    color: #ffd8dd;
+    cursor: pointer;
+}
+
+.button_someday
+{
+    width: 132px;
+    height: 30px;
+    background-color:#d15364;
+    border-radius: 10px;
+    border-color: #ffffff;
+    color: #ffffff;
+    position: absolute;
+
+    border-width: 2px;
+    border-style: solid;
+
+    right: 168px;
+    font-size: 16px;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: cell;
+
+    margin: -14px;
+}
+
+.activity_button{
+    width: 132px;
+    height: 20px;
+    background-color: transparent;
+
+    border-radius: 10px;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    
+    position: absolute;
+    right: 20px;
+    
+    /* 자식 요소 가운데 정렬 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    cursor: pointer;
+
+    margin: -14px;
+}
+
+.activity_text{
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.activity_list {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.activity_menu {
+    width: 140px;
+    background: rgba(193, 48, 67, 0.6);
+
+    color: #ffffff;
+    border-radius: 0px 0px 12px 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);  /* 그림자 */
+    
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;  /* 자식 요소 세로로 정렬 */
+    box-sizing: border-box;  /* 패딩, 테두리가 크기에 영향 주지 않기 */
+
+    list-style: disc;  /* 드롭다운 왼쪽에 ● 모양 추가 */
+    z-index: 20;       /* 요소가 겹쳤을 때 위에 보이기 */
+    max-height: 0;     /* 최대 높이 0 (가렸다가 나중에 보여주기 위함) */
+    overflow: hidden;  /* 요소 안보이게 */
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.activity_menu.open{
+    transition: max-height 0.7s ease-in;
+    max-height: 100vh;
+}
+
+.main { 
+    width: 1240px;
+    height: 572px;
+    border: #d15364 solid 2px;
+    position: relative;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 24px;
+
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.main::-webkit-scrollbar{
+    display: none;
+}
+
+.picture {
+    width: 244px;
+    height: 200px;
+}

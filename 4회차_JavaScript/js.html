@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>Someday_home</title>
+    <link rel="stylesheet" href="js.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <p class="someday_title" title="someday">someday</p>
+        <div class="button_main">
+            <input type="button" class="button_someday" onclick="movepage()"value="someday">
+            <div class="activity_button" id="activity_button">
+                <p class="activity_text">활동기록</p>
+            </div>
+            <ul class="activity_menu" id="activity_menu">
+                <li class="activity_list" style="margin-top: 8px;">
+                    <a href="../1회차_웹개발이란/naver.html">네이버</a>
+                </li>
+                <li class="activity_list" style="margin-top: 8px;">
+                    <a href="../2회차_입출력/calculator.html">계산기</a>
+                </li>
+                <li class="activity_list" style="margin-top: 8px;">
+                    <a href="../2회차_입출력/input.html">입출력</a>
+                </li>
+                <li class="activity_list" style="margin-top: 8px;">
+                    <a href="../3회차_div 속 div/card.html">명함</a>
+                </li>
+            </ul>
+
+        </div>
+        
+
+    </div>
+    <div class="main">
+        <img src="./img/1.jpg" class="picture">
+        <img src="./img/2.jpg" class="picture">
+        <img src="./img/3.jpg" class="picture">
+        <img src="./img/4.jpg" class="picture">
+        <img src="./img/5.jpg" class="picture">
+        <img src="./img/6.jpg" class="picture">
+        <img src="./img/7.jpg" class="picture">
+        <img src="./img/8.jpg" class="picture">
+        <img src="./img/9.jpg" class="picture">
+        <img src="./img/10.jpg" class="picture">
+        <img src="./img/11.jpg" class="picture">
+        <img src="./img/12.jpg" class="picture">
+        <img src="./img/13.png" class="picture">
+        <img src="./img/14.jpg" class="picture">
+        <img src="./img/15.jpg" class="picture">
+        <img src="./img/16.jpg" class="picture">
+        <img src="./img/17.jpg" class="picture">
+        <img src="./img/18.jpg" class="picture">
+        <img src="./img/19.jpg" class="picture">
+        <img src="./img/20.jpg" class="picture">
+        <img src="./img/21.png" class="picture">
+        <img src="./img/22.png" class="picture">
+        <img src="./img/23.png" class="picture">
+    </div>
+
+    <script>
+        function movepage() {
+            if(confirm("페이지를 이동하시겠습니까?")){
+                location.href = "https://creamy-tim.github.io/Someday/index.html" //페이지 이동 코드
+            }
+        }
+
+        /* 변수 선언 */
+        const activity_button = document.getElementById("activity_button");
+        const activity_menu   = document.getElementById("activity_menu");
+
+        // Someday 버튼 클릭시 작동
+        activity_button.addEventListener("click", (e) => {
+            e.stopPropagation();                     // 이 요소를 눌러야먄 클릭 이벤트가 생김
+            activity_menu.classList.toggle("open");   // 이미 열려있으면 닫기
+        });
+
+        // 바깥 클릭시 작동
+        document.addEventListener("click", (e) => {
+        if (!e.target.closest(".activity_button") && !e.target.closest(".activity_menu")) {
+            activity_menu.classList.remove("open");
+            people_menu.classList.remove("open");
+        }
+        });
+    </script>
+</body>

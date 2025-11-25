@@ -1,0 +1,152 @@
+.container {
+    width: 1280px;
+    height: 720px;
+    box-sizing: border-box;
+    border-color: transparent;
+    display: flex;
+    margin: auto;
+}
+
+.left_side {
+    width: 288px;
+    height: 100%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #6a76d1;
+}
+
+.right_side{
+    width: 992px;
+    height: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+
+    border-style: solid;
+    border-width: 5px;
+    border-color: #6a76d1;
+}
+
+.left_arrow {
+    width: 22px;
+    height: 20px;
+    position: relative;
+    margin-top: 20px;
+    left: 20px;
+}
+
+.my_img {
+    position: relative;
+    top: 70px;
+    margin-left: 50px;
+
+}
+
+.pic {
+    width: 216px;
+    height: 216px;
+   
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #e07b88;
+    box-sizing: border-box;
+}
+
+.text_box {
+    top: 108px;
+    left: 76px;
+    position: relative;
+    font-family:'Google-Sans-Flex', sans-serif;
+
+}
+
+.text {
+    font-family:'Google Sans Flex', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.right_side_background {
+    width: 992pxx;
+    height: 992px;
+    background: #fff2f3;
+    border-radius: 80% 0% 0% 0%;
+    position: relative;
+    display: flex;
+}
+
+.name_tag {
+    width: 328px;
+    height: 130px;
+    margin-top: 32px;
+    right: 32px;
+
+    position: absolute;
+}
+
+.nameframe {
+    color: #ffffff;
+    position: absolute;
+    font-size: 60px;
+    font-weight: 800;
+    margin: 0;
+    top: 65px;
+    right: 110px;
+    text-shadow:
+        -5px -5px 0 #D15364,
+         5px -5px 0 #D15364,
+        -5px  5px 0 #D15364,
+         5px  5px 0 #D15364,
+         0px -5px 0 #D15364,
+         0px  5px 0 #D15364,
+        -5px  0px 0 #D15364,
+         5px  0px 0 #D15364;
+}
+
+.act_section {
+    height: 784px;
+    width: 636px;
+    top: 208px;
+    left: 352px;
+    bottom: 0px;
+    position: absolute;
+    display: flex;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.act_section::-webkit-scrollbar {
+    display: none;
+}
+
+.act_case {
+    height: 784px;
+    width: 208px;
+    position: relative;
+    margin-right: 104px;
+}
+
+.work {
+    position: relative;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.work_detail {
+    position: relative;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.detail {
+    position: relative;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
